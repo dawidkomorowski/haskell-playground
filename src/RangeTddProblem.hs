@@ -2,6 +2,9 @@ module RangeTddProblem where
 
 isNumberInRange 
     number
-    rangeLeft includeRangeLeft 
+    rangeLeft includeLeft 
     rangeRight includeRight 
-    = False
+    = 
+        (if includeLeft then number >= rangeLeft else number > rangeLeft)
+        &&
+        (if includeRight then number <= rangeRight else number < rangeRight)
