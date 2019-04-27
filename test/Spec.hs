@@ -1,4 +1,9 @@
---import Test.HUnit
+import Test.HUnit
+import Lib
 
-main :: IO ()
-main = putStrLn "Test suite not yet implemented"
+test1 = TestCase (assertEqual "hmm?" 2 3)
+
+tests = TestList [TestLabel "test1 name" test1]
+
+main :: IO Counts
+main = runTestTT (tests)
