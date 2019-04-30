@@ -1,6 +1,6 @@
 import Test.HUnit
-import Lib
-import RangeTddProblemTests
+--import RangeTddProblemTests
+import BinarySearchTddProblemTests
 
 main :: IO Counts
 main = runTestTT (tests)
