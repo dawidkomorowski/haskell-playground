@@ -2,6 +2,7 @@ module BinarySearchTddProblemTests (tests) where
 
 import Test.HUnit
 import BinarySearchTddProblem
+import Debug.Trace
 
 binarySearchTests = TestList [
     TestCase (assertEqual "3 in []" (-1 ) (binarySearch 3 [])),
